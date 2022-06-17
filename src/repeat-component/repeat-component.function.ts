@@ -9,10 +9,8 @@ import {
 
 const isFunctionGuard = (fn: any): fn is Function => isFunction(fn);
 
-const functionToRepeat = (functionToCall: TFunctionToRepeat) => (
-  _: unknown,
-  index: number
-): ReactNode => functionToCall(index);
+const functionToRepeat = (callback: TFunctionToRepeat) => (_: unknown, index: number): ReactNode =>
+  callback(index);
 
 const componentToRepeat = (component: TComponentToRepeat) => () => component;
 
