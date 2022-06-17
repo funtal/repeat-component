@@ -1,0 +1,91 @@
+{
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "homepage": "https://github.com/funtal/repeat-component#readme",
+  "description": "If for some reason you want to draw your component n times then this package is for you",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/funtal/repeat-component.git"
+  },
+  "bugs": {
+    "url": "https://github.com/funtal/repeat-component/issues"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 100,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "repeat-component",
+  "author": "playerony",
+  "module": "dist/repeat-component.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/repeat-component.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/repeat-component.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^7.0.8",
+    "@types/is-function": "^1.0.1",
+    "@types/react": "^18.0.14",
+    "@types/react-dom": "^18.0.5",
+    "husky": "4.3.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "size-limit": "^7.0.8",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.3"
+  },
+  "dependencies": {
+    "is-function": "^1.0.2"
+  },
+  "keywords": [
+    "ts",
+    "react",
+    "funtal",
+    "repeat",
+    "playerony",
+    "react-dom",
+    "component",
+    "typescript",
+    "Typescript",
+    "repeatComponent",
+    "repeat-component",
+    "repeatReactComponent",
+    "repeat-react-component",
+    "repeatReactComponentLibrary",
+    "repeat-react-component-library"
+  ]
+}
